@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servidor de Origem</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: monospace;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      text-align: center;
+      border: 2px solid #ff4444;
+      padding: 60px 80px;
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .label {
+      font-size: 12px;
+      letter-spacing: 4px;
+      color: #ff4444;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 52px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #ffffff;
+    }
+
+    p {
+      font-size: 16px;
+      color: #a0a0a0;
+      line-height: 2;
+    }
+
+    .warning {
+      margin-top: 40px;
+      padding: 16px 24px;
+      background: #1a0000;
+      border-left: 4px solid #ff4444;
+      color: #ff8888;
+      font-size: 14px;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 40px 25px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="label">Servidor de Origem</div>
+
+    <h1>ORIGEM</h1>
+
+    <p>
+      Conteúdo está sendo entregue diretamente pelo servidor de origem.
+      <br>
+      Sem cache. Sem CDN.
+    </p>
+
+    <div class="warning">
+      ⚠ Latência artificial aplicada: ~200 ms
+      <br>
+      Cada requisição busca o conteúdo diretamente na origem.
+    </div>
+  </div>
+</body>
+</html>

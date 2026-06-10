@@ -2,9 +2,12 @@ services:
   origem:
     image: nginx:alpine
     container_name: origem
+    ports:
+      - "8081:80"
     volumes:
       - ./origem/index.html:/usr/share/nginx/html/index.html
       - ./origem/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./origem/HMNARNH02.mp4:/usr/share/nginx/html/HMNARNH02.mp4
     networks:
       cdn_network:
         ipv4_address: 172.20.0.10

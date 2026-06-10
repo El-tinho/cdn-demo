@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servidor de Origem</title>
+  <title>Servidor CDN</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -19,7 +19,7 @@
     }
     .container {
   text-align: center;
-  border: 2px solid #ff4444;
+  border: 2px solid #00cc66;
   padding: 40px 60px;
   max-width: 600px;
   width: 100%;
@@ -28,49 +28,49 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-    }
+}
     .label {
       font-size: 12px;
       letter-spacing: 4px;
-      color: #ff4444;
+      color: #00cc66;
       text-transform: uppercase;
       margin-bottom: 20px;
     }
     h1 { font-size: 42px; margin-bottom: 16px; }
     p { font-size: 14px; color: #888; line-height: 1.8; }
-    .warning {
+    .info {
       margin-top: 20px;
       padding: 12px 20px;
-      background: #1a0000;
-      border-left: 3px solid #ff4444;
+      background: #001a0d;
+      border-left: 3px solid #00cc66;
       font-size: 13px;
-      color: #ff8888;
+      color: #00ff88;
       text-align: left;
     }
     .btn {
       display: inline-block;
       margin-top: 30px;
       padding: 14px 40px;
-      background: #ff4444;
-      color: #fff;
+      background: #00cc66;
+      color: #000;
       text-decoration: none;
       font-size: 14px;
       letter-spacing: 2px;
       text-transform: uppercase;
       transition: background 0.2s;
     }
-    .btn:hover { background: #cc0000; }
+    .btn:hover { background: #009944; }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="label">Servidor de Origem</div>
-    <h1>ORIGEM</h1>
-    <p>Conteúdo está sendo entregue diretamente pelo servidor de origem.<br>Sem cache. Sem CDN.</p>
-    <div class="warning">
-      &#9888; Latência artificial aplicada: ~200 ms<br>
-      Cada requisição busca o conteúdo diretamente na origem.
+    <div class="label">Servidor CDN</div>
+    <h1>CDN</h1>
+    <p>Conteúdo está sendo entregue pelo servidor CDN.</p>
+    <div class="info">
+      &#9989; Cache ativo<br>
+      Primeiro acesso: MISS — busca na origem.<br>
+      Segundo acesso em diante: HIT — servido pelo cache.
     </div>
     <a class="btn" href="/HMNARNH02.mp4">Seguir para o Conteúdo</a>
   </div>

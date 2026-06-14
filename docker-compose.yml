@@ -1,7 +1,7 @@
 services:
   origem:
-    image: nginx:alpine
-    container_name: origem
+    build:
+    context: ./origem
     ports:
       - "8081:80"
     cap_add:
